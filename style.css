@@ -1,0 +1,218 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+   --cor-do-hover: #3679FF;
+   --cor-do-titulo: #1A1A1A;
+   --cor-fundo-sobre: #CFD8E8;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 1% 10%;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
+de utiliza-la. 
+
+Mas o que é o BEM?
+
+BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
+web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
+Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
+de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
+
+Link da documentação oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sessão Menu*/
+
+section.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    width: 50%;
+}
+
+.icone-header{
+    width: 10%;
+    height: max-content;
+}
+
+.menu__title{
+    margin-left: 2%;
+}
+
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__list__item__contato{
+    font-weight: bold;
+}
+
+.menu__list a:hover{
+    color: var(--cor-do-hover);
+    transition: 0.25s;
+}
+
+/*Sessão Title*/
+
+section.title{
+    display: flex;
+    margin: 5% auto;
+    padding: 1%;
+}
+
+.title__div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.title__container{
+    width: 75%;
+}
+
+.title__bio{
+    margin: 10% 10% 2% 0;
+    font-size: 52px;
+    font-weight: bolder;
+    font-family: 'Rubik', sans-serif;
+    color: var(--cor-do-titulo);
+    line-height: 1.2;
+}
+
+.title__subsection{
+    margin: 0 5% 2% 0;
+    font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.3;
+}
+
+.title__network{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding: 0;
+    margin: 0;
+}
+
+.title__network__item a:hover{
+    color: var(--cor-do-hover);
+    transition: 0.25s;
+}
+
+.title__profile{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Sessão About*/
+
+section.about{
+    background-color: var(--cor-fundo-sobre);
+    border-radius: 25px;
+    padding: 1%;
+}
+
+/*Sessão Hobbies*/
+
+section.hobbies{
+    
+}
+
+/* Experiência Acadêmica*/
+
+section.academic{
+
+}
+
+/* experiência*/
+
+section.experience{
+
+}
+
+/*Contato*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menu */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Experiências acadêmicas*/
+
+/*Expeirência profissional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sessão sobre*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formação Acadêmica*/
+
+/*Experiência Profissional*/
+
+ /*Contato*/
+
+/*Footer*/
+
+}
