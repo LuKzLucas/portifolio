@@ -253,13 +253,16 @@ section.about{
     text-align: center;
     color: var(--cor-do-titulo);
     margin-top: 7%;
+    margin-bottom: 0;
+    background-color: var(--cor-fundo-sobre);    
+    padding: 2rem;
 }
 
 .academic__courses{
     display: flex;
     justify-content: center;
     background-color: var(--cor-fundo-sobre);
-    border-radius: 25px;
+    padding: 2rem;
 }
 
 .academic__courses__box{
@@ -305,7 +308,6 @@ section.experience{
 
 .experience__img{
     width: 600px;
-    border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -426,13 +428,120 @@ section.experience{
 /*Contato*/
 
 section.formcontato{
+    margin-top: 10rem;
+    background-color: var(--cor-fundo-sobre);
+}
 
+.formcontato__contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 100px;
+}
+
+.formcontato__img{
+    width: 45%;
+}
+
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.formcontato__title{
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: var(--cor-do-titulo);
+    margin: 0;
+}
+
+.formcontato__subtext{
+    font-weight: 700;
+    font-size: 17px;
+    margin: 3rem auto 0;
+}
+
+.formcontato__subtext__2{
+    font-weight: 400;
+    font-size: 15px;
+    margin: 1rem auto;
+}
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formcontato__input{
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Raleway';
+    font-size: 13px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.formcontato__textarea{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-family: 'Raleway';
+    border-style: none;
+    border-radius: 5px;
+}
+
+.formcontato__botao{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+
+    color: var(--cor-de-fundo);
+    background-color: var(--cor-botao-experiencia);
+
+    border: solid 3px var(--cor-botao-experiencia);
+    border-radius: 7px;
+
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 1rem;
+    width: 100%;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formcontato__botao:hover{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+
+    color: var(--cor-de-fundo);
+    background-color: var(--cor-do-hover);
+
+    border: solid 3px var(--cor-do-hover);
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /*footeer*/
 
 section.footer{
-   
+   display: flex;
+   justify-content: space-around;
+   align-items: center;   
+   padding: 1rem;
+   margin-top: 5%;
+}
+
+.footer p{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--cor-do-titulo);
+
+    margin: 10px 0 0;
+
 }
 
 /* Chegou a hora de se desafiar com a responsividade, 
