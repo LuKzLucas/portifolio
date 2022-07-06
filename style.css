@@ -10,6 +10,7 @@ coloque nas sessões indicadas*/
    --cor-do-hover: #27d100;
    --cor-do-titulo: #1A1A1A;
    --cor-fundo-sobre: #cde3c8;
+   --cor-botao-experiencia: #40902d;
 }
 
 body {
@@ -28,6 +29,17 @@ ol, ul,li {
 a{
     text-decoration: none;
     color: var(--cor-de-link);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+button{
+    border: none;
+    text-decoration: none;
 }
 
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
@@ -235,15 +247,179 @@ section.about{
 
 /* Experiência Acadêmica*/
 
-section.academic{
+.academic__title{
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: var(--cor-do-titulo);
+    margin-top: 7%;
+}
 
+.academic__courses{
+    display: flex;
+    justify-content: center;
+}
+
+.academic__courses__box{
+    margin: 1rem 2rem;
+}
+
+.academic__courses__item__img{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 50px;
+}
+
+.academic__courses__logo{
+    border-radius: 30px;
+}
+
+.academic__courses__item__title, .academic__courses__item__subtitle{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0; 
 }
 
 /* experiência*/
 
 section.experience{
+    text-align: center;
+}
+
+.experience__section__title{
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: var(--cor-do-titulo);
+    margin-top: 7%;
+}
+
+.experiencie__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.experience__img{
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.experience__info{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience__title{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: var(--cor-do-titulo);
+    margin: 5px;
+}
+
+.experience__text{
+    font-size: 15px;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.experience__description{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-top: 1rem;
+}
+
+.experience__p{
+    text-align: justify;
+    padding: 1rem;
+    margin: 0 2rem;
+    font-size: 13px;
+}
+
+.experience__repo, .experience__demo{
+    display: flex;
+    width: 70%;
+}
+
+.experiencia__botao--repo{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+
+    color: var(--cor-botao-experiencia);
+
+    border: solid 3px var(--cor-botao-experiencia);
+    border-radius: 7px;
+
+    padding: .5rem;
+    width: 70%;
+
+    cursor: pointer;
+    transition: 0.3s;
 
 }
+
+.experiencia__botao--demo{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+
+    color: var(--cor-de-fundo);
+    background-color: var(--cor-botao-experiencia);
+
+    border: solid 3px var(--cor-botao-experiencia);
+    border-radius: 7px;
+
+    padding: .5rem;
+    width: 70%;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.experiencia__botao--repo:hover{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+
+    color: var(--cor-do-hover);
+
+    border: solid 3px var(--cor-do-hover);
+    border-radius: 7px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    padding: .5rem;
+    width: 70%;
+
+    cursor: pointer;
+    transform: scale(0.95);
+
+}
+
+.experiencia__botao--demo:hover{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+
+    color: var(--cor-de-fundo);
+    background-color: var(--cor-do-hover);
+
+    border: solid 3px var(--cor-do-hover);
+    border-radius: 7px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    padding: .5rem;
+    width: 70%;
+
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
 
 /*Contato*/
 
